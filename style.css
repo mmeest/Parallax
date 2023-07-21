@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,800&display=swap');
+
+*, 
+*::before, 
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #333;
+}
+
+nav img{
+    margin-left: 2.3rem;
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.582);
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.4rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 2px 71px #deeff8e3;
+}
+
+header nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0.7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.hamburger{
+    padding-left: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.hamburger a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburer .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before, 
+.hamburger .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before{
+    top: -4.5px;
+}
+
+.hamburer .bar::after{
+    top: 4.5px;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.18,.5,.37,.99);    
+}
+
+.bg-img{
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 390px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.text{
+    position: absolute;
+    z-index: 300;
+    top: calc(50% - 130px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.text h2{
+    font-weight: 200;
+    font-size: 5rem;
+    line-height: 3rem;
+    color: yellow;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.text h1{
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 3rem;  
+    color: #84b1e3;
+    text-shadow: 4px 4px 7px #000000
+}
+
+.house-1{
+    position: absolute;
+    z-index: 100;
+    width: 230px;
+    top: calc(50% - 28vh);
+    left: calc(50% - 48vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-2{
+    position: absolute;
+    z-index: 200;
+    width: 300px;
+    top: calc(50% - 28vh);
+    left: calc(50% + 45vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-3{
+    position: absolute;
+    z-index: 200;
+    width: 300px;
+    top: calc(50% - 20vh);
+    left: calc(50% - 35vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-4{
+    position: absolute;
+    z-index: 200;
+    width: 400px;
+    top: calc(50% - 20vh);
+    left: calc(50% + 30vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-5{
+    position: absolute;
+    z-index: 500;
+    width: 350px;
+    top: calc(50% - 11vh);
+    left: calc(50% - 43vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-6{
+    position: absolute;
+    z-index: 230;
+    width: 550px;
+    top: calc(50% - 15vh);
+    left: calc(50% - 15vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-7{
+    position: absolute;
+    z-index: 220;
+    width: 550px;
+    top: calc(50% - 15vh);
+    left: calc(50% + 12vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-8{
+    position: absolute;
+    z-index: 600;
+    width: 520px;
+    top: calc(50%);
+    left: calc(50% - 17vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-9{
+    position: absolute;
+    z-index: 700;
+    width: 430px;
+    top: calc(50% + 7vh);
+    left: calc(50% - 39vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-10{
+    position: absolute;
+    z-index: 750;
+    width: 350px;
+    top: calc(50%);
+    left: calc(50% + 11vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-11{
+    position: absolute;
+    z-index: 780;
+    width: 450px;
+    top: calc(50% + 7vh);
+    left: calc(50% - 4vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-12{
+    position: absolute;
+    z-index: 800;
+    width: 450px;
+    top: calc(50% + 27vh);
+    left: calc(50% - 23vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-13{
+    position: absolute;
+    z-index: 700;
+    width: 480px;
+    top: calc(50% - 6vh);
+    left: calc(50% + 38vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-14{
+    position: absolute;
+    z-index: 800;
+    width: 460px;
+    top: calc(50% + 16vh);
+    left: calc(50% + 25vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-15{
+    position: absolute;
+    z-index: 900;
+    width: 550px;
+    top: calc(50% + 22vh);
+    left: calc(50% + 42vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-16{
+    position: absolute;
+    z-index: 920;
+    width: 550px;
+    top: calc(50% + 28vh);
+    left: calc(50% + 11vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-17{
+    position: absolute;
+    z-index: 955;
+    width: 550px;
+    top: calc(50% + 32vh);
+    left: calc(50% + 42vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-18{
+    position: absolute;
+    z-index: 1000;
+    width: 550px;
+    top: calc(50% + 46vh);
+    left: calc(50% + 18vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-19{
+    position: absolute;
+    z-index: 1100;
+    width: 550px;
+    top: calc(50% + 44vh);
+    left: calc(50% - 50vw);
+    transform: translate(-50%, -50%);    
+}
+
+.house-20{
+    position: absolute;
+    z-index: 1200;
+    width: 650px;
+    top: calc(50% + 47vh);
+    left: calc(50% - 5vw);
+    transform: translate(-50%, -50%);    
+}
